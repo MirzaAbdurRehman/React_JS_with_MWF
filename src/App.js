@@ -8,6 +8,7 @@ import StatesFunctionBased from "./components/StatesFunctionBased";
 import StatesClassBased from "./components/StatesClassBased";
 import PropsinFunctionBased from "./components/PropsinFunctionBased";
 import GetInputData from "./components/getInputData";
+import FormHandling from "./components/FormHandling";
 
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
     <div className="App">
       
 
-     <HelloWorld/>
-      <p>Welcome to the React Application.</p>
+     {/* <HelloWorld/>
+      <p>Welcome to the React Application.</p> */}
       {/* <Calculate/>
       <ClassComponent/>
       <ClassBased/>
@@ -30,7 +31,9 @@ function App() {
       {/* <StatesClassBased/> */}
 
       {/* <PropsinFunctionBased firtname ="Munim" email = "munim12@gmail.com"/> */}
-      <GetInputData/>
+      {/* <GetInputData/> */}
+
+      <FormHandling/>
     </div>
   );
 }
