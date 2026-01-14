@@ -9,6 +9,8 @@ import StatesClassBased from "./components/StatesClassBased";
 import PropsinFunctionBased from "./components/PropsinFunctionBased";
 import GetInputData from "./components/getInputData";
 import FormHandling from "./components/FormHandling";
+import ApiFetch from "./components/ApiFetch";
+import ArrayListing from "./components/ArrayListing";
 
 
 function App() {
@@ -33,7 +35,10 @@ function App() {
       {/* <PropsinFunctionBased firtname ="Munim" email = "munim12@gmail.com"/> */}
       {/* <GetInputData/> */}
 
-      <FormHandling/>
+      {/* <FormHandling/> */}
+
+      {/* <ApiFetch/> */}
+      <ArrayListing/>
     </div>
   );
 }
