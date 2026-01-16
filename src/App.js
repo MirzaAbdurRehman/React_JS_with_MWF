@@ -11,6 +11,11 @@ import GetInputData from "./components/getInputData";
 import FormHandling from "./components/FormHandling";
 import ApiFetch from "./components/ApiFetch";
 import ArrayListing from "./components/ArrayListing";
+import Constructor from "./components/classbasedLifeCycle/Constructor";
+import Rendering from "./components/classbasedLifeCycle/Rendering";
+import ComponentDidMount from "./components/classbasedLifeCycle/ComponentDidMount";
+import ComponentDidUpdate from "./components/classbasedLifeCycle/ComponentDidUpdate";
+import ShoulComponentUpdate from "./components/classbasedLifeCycle/ShoulComponentUpdate";
 
 
 function App() {
@@ -38,7 +43,13 @@ function App() {
       {/* <FormHandling/> */}
 
       {/* <ApiFetch/> */}
-      <ArrayListing/>
+      {/* <ArrayListing/> */}
+      {/* <Constructor/> */}
+      {/* <Rendering/> */}
+      {/* <ComponentDidMount/> */}
+      {/* <ComponentDidUpdate/> */}
+
+      <ShoulComponentUpdate/>
     </div>
   );
 }
