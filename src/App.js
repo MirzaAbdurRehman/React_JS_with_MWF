@@ -16,6 +16,8 @@ import Rendering from "./components/classbasedLifeCycle/Rendering";
 import ComponentDidMount from "./components/classbasedLifeCycle/ComponentDidMount";
 import ComponentDidUpdate from "./components/classbasedLifeCycle/ComponentDidUpdate";
 import ShoulComponentUpdate from "./components/classbasedLifeCycle/ShoulComponentUpdate";
+import UseEffectHook from "./components/FunctionBsedLifeCycle/useEffectHook";
+import ConditionUseEffectHook from "./components/FunctionBsedLifeCycle/ConditionUseEffectHook";
 
 
 function App() {
@@ -49,7 +51,11 @@ function App() {
       {/* <ComponentDidMount/> */}
       {/* <ComponentDidUpdate/> */}
 
-      <ShoulComponentUpdate/>
+      {/* <ShoulComponentUpdate/> */}
+
+      {/* <UseEffectHook/> */}
+
+      < ConditionUseEffectHook/>
     </div>
   );
 }
