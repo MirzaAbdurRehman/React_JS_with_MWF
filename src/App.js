@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HelloWorld, { Calculate } from "./components/FunctionalBased";
 import ClassComponent, { ClassBased } from "./components/ClassBased";
 import { JSX } from "./components/JSX";
@@ -18,14 +18,17 @@ import ComponentDidUpdate from "./components/classbasedLifeCycle/ComponentDidUpd
 import ShoulComponentUpdate from "./components/classbasedLifeCycle/ShoulComponentUpdate";
 import UseEffectHook from "./components/FunctionBsedLifeCycle/useEffectHook";
 import ConditionUseEffectHook from "./components/FunctionBsedLifeCycle/ConditionUseEffectHook";
-
+import PropsUseEffect from "./components/FunctionBsedLifeCycle/PropsUseEffect";
+import Use_Memo from "./components/FunctionBsedLifeCycle/Use_Memo";
+import { Pure_Component, Regular_Component } from "./components/classbasedLifeCycle/PureComponent";
 
 function App() {
+  const [count, setCount] = useState(0);
+  const [age, setAge] = useState(25);
+
   return (
     <div className="App">
-      
-
-     {/* <HelloWorld/>
+      {/* <HelloWorld/>
       <p>Welcome to the React Application.</p> */}
       {/* <Calculate/>
       <ClassComponent/>
@@ -55,7 +58,17 @@ function App() {
 
       {/* <UseEffectHook/> */}
 
-      < ConditionUseEffectHook/>
+      {/* < ConditionUseEffectHook/> */}
+{/* 
+      <h2>Parent State - Count: {count}</h2>
+      <button onClick={ () => setCount(count + 1)}>Increment Parent Count</button>
+      <hr/>
+
+      <Pure_Component value={count}/>
+      <hr/>
+      <Regular_Component value={count}/> */}
+      <hr/>
+      <Use_Memo/>
     </div>
   );
 }
